@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Friend Finder is a is a compatibility based application that allows users to answer a series of questions and be matched with someone who exhibits similar traits.  It is a node application using express to create server functionality to connect the front end web page with the back end logic and data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhearre/Friend-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bhearre/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/Bhearre/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
