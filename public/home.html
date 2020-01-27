@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="fa fa-fire"></span> Friend Finder</h1>
+            <hr>
+            <h2 class="text-center">Take the Survey and be matched with great and compatible friends!</h2>
+            <br>
+
+            <!-- <div class="text-center">
+                <a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Take the
+                        survey</button></a>
+                <a href="/home"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Find
+                        Friends</button></a>
+            </div> -->
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name Goes Here">
+                </div>
+
+                <div class="form-group">
+                    <h4><label for="photo">Please Provide a Link to Photo You (Required)</label></h4>
+                    <input type="text" class="form-control" required id="photo"
+                        placeholder="https://Your Photo URL Goes Here">
+                </div>
+
+                <div class="form-group">
+                    <label for="q1">You are a nice person?</label>
+                    <select multiple class="form-control" id="q1">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q2">You open minded and respectful of the view of others?</label>
+                    <select multiple class="form-control" id="q2">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q3">You like to participate in outdoor activities?</label>
+                    <select multiple class="form-control" id="q3">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q4">You like to sample new kinds of food?</label>
+                    <select multiple class="form-control" id="q4">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q5">You are a charitable person. </label>
+                    <select multiple class="form-control" id="q5">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q6">You are fun to be around. </label>
+                    <select multiple class="form-control" id="q6">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q7">You are like to work hard. </label>
+                    <select multiple class="form-control" id="q7">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q8">You like to work hard. </label>
+                    <select multiple class="form-control" id="q8">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q9">You are a compassionate person. </label>
+                    <select multiple class="form-control" id="q9">
+                        <option value="">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="q10">Your friends and family are more important to you than anything else. </label>
+                    <select multiple class="form-control" id="q10">
+                        <option value=" ">0 </option>
+                        <option value="1">1 (Stongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree or Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Stongly Agree)</option>
+                    </select>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div> -->
+            </form>
+        </div>
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+                aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a
+                        href="https://github.com/Bhearre/Friend-Finder">GitHub Repo</a>
+                    | <a href="/api/home">API Home</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            q1: $("#q1").val().trim(),
+            q2: $("#q2").val().trim(),
+            q3: $("#q3").val().trim(),
+            q4: $("#q4").val().trim(),
+            q5: $("#q5").val().trim(),
+            q6: $("#q6").val().trim(),
+            q7: $("#q7").val().trim(),
+            q8: $("#q8").val().trim(),
+            q9: $("#q9").val().trim(),
+            q10: $("#q10").val().trim()
+
+
+        };
+
+        console.log(newFriend);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+
+                // If the survey is complete add a new friend to the friend finder.
+                if (data) {
+                    alert("Yay! You are been added to friend finder!");
+                }
+
+                // If survey is not complete... tell the user they need to complete the form and sumbit.
+                else {
+                    alert("Sorry you are have to complete the form");
+                }
+
+                // Clear the form when submitting
+                    $("#name").val(""),
+                    $("#photo").val(""),
+                    $("#q1").val(""),
+                    $("#q2").val(""),
+                    $("#q3").val(""),
+                    $("#q4").val(""),
+                    $("#q5").val(""),
+                    $("#q6").val(""),
+                    $("#q7").val(""),
+                    $("#q8").val(""),
+                    $("#q9").val(""),
+                    $("#q10").val("")
+
+
+            });
+
+    });
+
+</script>
