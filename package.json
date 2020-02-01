@@ -4,7 +4,7 @@
   "description": "Friend Finder is a is a compatibility based application that allows users to answer a series of questions and be matched with someone who exhibits similar traits.  It is a node application using express to create server functionality to connect the front end web page with the back end logic and data.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
